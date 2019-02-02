@@ -33,6 +33,7 @@ GY80::GY80()
 void GY80::begin()
 {
     Wire.begin();
+    Wire.setClock(400000UL);
     m_init();
     a_init();
     g_init();
